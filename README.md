@@ -13,4 +13,4 @@ A responsive front-end clone of the Spotify Web Player interface built to showca
 • Dynamic library listing and custom playlist navigation
 
 ## Live Demo
-*(Paste your GitHub Pages link here once enabled)*
+https://syedalizain1671-hue.github.io/spotify-frontend-UI/
