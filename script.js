@@ -1,3 +1,4 @@
+const AUDIO_BASE_URL = "https://github.com/syedalizain1671-hue/spotify-frontend-UI/releases/download/v1.0/";
 let currentSong = new Audio();
 let songs;
 let currFolder;
@@ -9,13 +10,13 @@ const musicCatalog = {
         description: "Quick access to all saved songs",
         cover: "songs/my playlist/cover.jpg",
         songs: [
-            "Ali-Janam Khuda Razi.mp3",
-            "Assalamu Alaika.mp3",
+            "Ali-Janam.Khuda.Razi.mp3",
+            "Assalamu.Alaika.mp3",
             "JaanamFida-e-Haideri.mp3",
-            "Kon Anta.mp3",
-            "Musnad e ahmad Hadees no.648.mp3",
-            "Sahih muslim hadees(panjtan pak).mp3",
-            "Muhammad Nabina.mp3",
+            "Kon.Anta.mp3",
+            "Musnad.e.ahmad.Hadees.no.648.mp3",
+            "Sahih.muslim.hadees.panjtan.pak.mp3",
+            "Muhammad.Nabina.mp3",
             "Tasbihat-e-Hazrat-Zehra.mp3",
             "The-way-of-the-tears.mp3",
             "Wal-khat-u-hussaini-lyrics.mp3",
@@ -28,8 +29,12 @@ const musicCatalog = {
         description: "Peaceful Recitations",
         cover: "songs/quran/cover.jpg",
         songs: [
-            "Surah Rahman.mp3",
-            "Surah Takasur.mp3"
+            "Surah.Rahman.mp3",
+            "Surah.Takasur.mp3",
+            "Surah.Al-Adiyat.mp3",
+            "Surah.AL-Mominoon.mp3",
+            "Surah.Ikhlas.mp3",
+            "Surah.Mulk.mp3",
         ]
     },
     "hadees": {
@@ -37,12 +42,12 @@ const musicCatalog = {
         description: "Guidance to right way",
         cover: "songs/hadees/cover.jpg",
         songs: [
-            "Gadir e khum hadees.mp3",
-            "Importance Of Namaz.mp3",
-            "Musnad e ahmad Hadees no.648.mp3",
-            "Sahih muslim hadees(panjtan pak).mp3",
-            "Sahih muslim hadess 6217.mp3",
-            "Why youth is unpracticed.mp3"
+            "Gadir.e.khum.hadees.mp3",
+            "Importance.Of.Namaz.mp3",
+            "Musnad.e.ahmad.Hadees.no.648.mp3",
+            "Sahih.muslim.hadees.panjtan.pak.mp3",
+            "Sahih.muslim.hadess.6217.mp3",
+            "Why.youth.is.unpracticed.mp3"
         ]
     },
 
@@ -51,9 +56,9 @@ const musicCatalog = {
         description: "Relax your soul",
         cover: "songs/cs/cover.jpg",
         songs: [
-            "Assalamu Alaika.mp3",
-            "Muhammad Nabina.mp3",
-            "Mustafa jaan-e-rehmat.mp3",
+            "Assalamu.Alaika.mp3",
+            "Muhammad.Nabina.mp3",
+            "Mustafa.jaan-e-rehmat.mp3",
             "Ya_Nabi_Salam_Aleyka.mp3",
         ]
     },
@@ -62,9 +67,9 @@ const musicCatalog = {
         description: "Vocal & Peaceful Nasheeds",
         cover: "songs/nasheed/cover.jpg",
         songs: [
-            "Kon Anta.mp3",
-            "Tabsirah Nasheed.mp3",
-            "Taweel Al Shawq.mp3",
+            "Kon.Anta.mp3",
+            "Tabsirah.Nasheed.mp3",
+            "Taweel.Al.Shawq.mp3",
             "The-way-of-the-tears.mp3",
             "Wedding-Nasheed.mp3"
         ]
@@ -92,7 +97,7 @@ const musicCatalog = {
         cover: "songs/ncs/cover.jpg",
         songs: [
             "Hawa-Ka-Sipahi-Hoon.mp3",
-            "Pakistan Army song.mp3"
+            "Pakistan.Army.song.mp3"
         ]
     },
     "noha": {
@@ -100,7 +105,7 @@ const musicCatalog = {
         description: "Rememberance of Karbala",
         cover: "songs/noha/cover.jpg",
         songs: [
-            "Ali-Janam Khuda Razi.mp3",
+            "Ali-Janam.Khuda.Razi.mp3",
             "JaanamFida-e-Haideri.mp3",
             "Tasbihat-e-Hazrat-Zehra.mp3",
             "Wal-khat-u-hussaini-lyrics.mp3"
@@ -140,7 +145,7 @@ function formatTime(seconds) {
 
 async function getSongs(folder) {
     currFolder = folder;
-    let folderKey = folder.split("/").pop(); // gets "quran" or "turkish"
+    let folderKey = folder.split("/").pop();
 
     // Retrieve songs array from catalog safely
     songs = musicCatalog[folderKey] ? musicCatalog[folderKey].songs : [];
@@ -174,7 +179,8 @@ async function getSongs(folder) {
 
 const playMusic = (track, pause = false) => {
     // Relative path fix (removed leading slash)
-    currentSong.src = `${currFolder}/${track}`;
+    currentSong.src = `${AUDIO_BASE_URL}${encodeURIComponent(track)}`;
+    // currentSong.src = `${currFolder}/${track}`;
 
     if (!pause) {
         currentSong.play();
