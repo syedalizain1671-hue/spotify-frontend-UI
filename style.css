@@ -570,7 +570,7 @@ nav .nav_left {
     }
 
     .left {
-        width: 330px;
+        width: 345px;
     }
 
     .home {
@@ -585,11 +585,6 @@ nav .nav_left {
     .spotifyPlaylist .card {
         justify-content: center;
         width: 90vw;
-    }
-
-    .play {
-        right: 10px;
-        top: 95px;
     }
 
     .play img {
@@ -622,11 +617,11 @@ nav .nav_left {
     }
 
     .cardContainer {
-        height: 55vh;
+        height: 50vh;
     }
 
     .playbox {
-        bottom: 40px;
+        bottom: 30px;
         flex-direction: column;
         height: 110px;
         padding: 15px 0px;
@@ -635,7 +630,7 @@ nav .nav_left {
     }
 
     .play {
-        top: 200px;
+        top: 180px;
         right: 20px;
     }
 
