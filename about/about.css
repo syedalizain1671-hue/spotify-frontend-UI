@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* header */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.header span {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: larger;
+    background-color: green;
+}
+
+h1 {
+    font-size: 45px;
+    padding: 10px;
+    color: white;
+}
+
+.header p {
+    font-size: 19px;
+    color: gray;
+}
+
+/* section */
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70vw;
+    height: 55vh;
+    margin: 10px;
+    padding: 15px;
+}
+
+.box_1,
+.box_2,
+.box_3,
+.box_4 {
+    background-color: #181818;
+    border: 1px solid #282828;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 5px;
+    height: 20vh;
+    width: 30vw;
+    color: white;
+}
+
+p {
+    padding: 13px 25px;
+}
+
+ul {
+    padding: 13px 25px;
+}
+
+.box_1 h2 {
+    color: #1db954;
+    padding: 5px;
+}
+
+.box_2 h2 {
+    color: #1db954;
+    padding: 5px;
+}
+
+.box_3 h2 {
+    color: #1db954;
+    padding: 5px;
+}
+
+.box_4 h2 {
+    color: #1db954;
+    padding: 5px;
+}
+
+/* footer */
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.foot p {
+    padding: 15px 0px;
+    color: gray;
+}
+
+.foot a {
+    text-decoration: none;
+    color: white;
+    background-color: darkgreen;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+a:hover {
+    background-color: #1db954;
+}
+
+/* responsiveness for landscape tablet */
+@media (max-width: 1024px) {
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 90vw;
+        height: 56vh;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .box_1,
+    .box_2,
+    .box_3,
+    .box_4 {
+        background-color: #181818;
+        border: 1px solid #282828;
+        border-radius: 10px;
+        padding: 9px;
+        margin: 5px;
+        width: 42vw;
+        color: white;
+    }
+
+    .foot p {
+        padding: 8px 0px;
+        color: gray;
+    }
+}
+
+/* responsiveness for Portrait tablet */
+@media (max-width: 768px) {
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 97vw;
+        height: 80vh;
+        margin: 15px;
+        padding: 10px;
+    }
+
+    .box_1,
+    .box_2,
+    .box_3,
+    .box_4 {
+        background-color: #181818;
+        border: 1px solid #282828;
+        border-radius: 10px;
+        padding: 9px;
+        margin: 5px;
+        width: 43vw;
+        height: 30vh;
+        color: white;
+    }
+
+    .foot p {
+        padding: 8px 0px;
+        color: gray;
+    }
+}
+
+/* responsiveness for mobile */
+@media (max-width: 360px) {
+
+    .box_1,
+    .box_2,
+    .box_3,
+    .box_4 {
+        background-color: #181818;
+        border: 1px solid #282828;
+        border-radius: 10px;
+        width: 39vw;
+        height: 45vh;
+        color: white;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    p {
+        padding: 2px 0px;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding: 15px;
+        color: white;
+    }
+
+    .box_1 h2 {
+        color: #1db954;
+        padding: 2px;
+        font-size: 15px;
+    }
+
+    .box_2 h2 {
+        color: #1db954;
+        padding: 2px;
+        font-size: 15px;
+    }
+
+    .box_3 h2 {
+        color: #1db954;
+        padding: 2px;
+        font-size: 15px;
+    }
+
+    .box_4 h2 {
+        color: #1db954;
+        padding: 2px;
+        font-size: 15px;
+    }
+}
