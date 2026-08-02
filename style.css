@@ -194,7 +194,7 @@ nav .nav_left {
 }
 
 .songList ul {
-    padding: 0px 15px;
+    padding: 0px 5px;
 }
 
 
@@ -231,7 +231,7 @@ nav .nav_left {
     list-style: none;
     list-style-type: decimal;
     display: flex;
-    width: 20vw;
+    width: 22vw;
     gap: 13px;
     border: 1px solid rgb(203, 199, 199);
     margin: 10px;
@@ -535,7 +535,12 @@ nav .nav_left {
     }
 
     .songList ul li {
-        width: 86vw;
+        width: 94vw;
+        height: 5vh;
+    }
+
+    .songList ul{
+        padding: 0px 0px;
     }
 
     nav {
