@@ -82,8 +82,8 @@ const musicCatalog = {
         description: "Imperical Turkish Soundtrack",
         cover: "songs/hamid/cover.jpg",
         songs: [
-            "_Payithat_Abdul_Hamid.mp3",
-            "_Plevne_Abdul_Hamid.mp3"
+            "Payithat_Abdul_Hamid.mp3",
+            "Plevne_Abdul_Hamid.mp3"
         ]
     },
     "ncs": {
