@@ -248,13 +248,13 @@ nav .nav_left {
     padding: 40px;
 }
 
-.information ul li a{
+.information ul li a {
     text-decoration: none;
     color: gray;
     font-size: larger;
 }
 
-.information ul li a:hover{
+.information ul li a:hover {
     color: rgb(9, 202, 25);
 }
 
@@ -535,10 +535,10 @@ nav .nav_left {
     }
 
     .songList ul li {
-        width: 94vw;
+        width: 88vw;
     }
 
-    .songList ul{
+    .songList ul {
         padding: 0px 0px;
     }
 
