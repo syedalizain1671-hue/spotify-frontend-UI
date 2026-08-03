@@ -528,6 +528,78 @@ nav .nav_left {
 
 }
 
+/* responsiveness for readme note 14 */
+@media (max-width:393px) {
+    nav .nav_left {
+        gap: 5px;
+    }
+
+    nav {
+        padding: 0px 5px;
+    }
+
+    .home img {
+        width: 20px;
+    }
+
+    .nav_right {
+        gap: 15px;
+        margin-right: 23px;
+    }
+
+    .left {
+        width: 365px;
+    }
+
+    .hamburger {
+        width: 35px;
+        height: 34px;
+    }
+
+    .songList ul li {
+        width: 86vw;
+    }
+
+    .spotifyPlaylist .card {
+        width: 330px;
+    }
+
+    .play {
+        right: 15px;
+        top: 190px;
+    }
+
+    .playbox {
+        margin-left: 0px;
+        bottom: 40px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .songbuttons {
+        gap: 15px;
+    }
+
+    .timevol {
+        gap: 60px;
+        width: 240px;
+        margin-bottom: 20px;
+    }
+
+    .seekbar {
+        width: 80%;
+        bottom: 8px;
+        height: 4px;
+        background: rgb(121, 121, 121);
+        margin: 0px;
+    }
+
+    .songinfo {
+        margin-top: 15px;
+    }
+}
+
 /* for phone infinix hot 10*/
 
 @media (max-width:363px) {
@@ -547,13 +619,13 @@ nav .nav_left {
         gap: 10px;
     }
 
-    .nav_left {
-        gap: 8px;
+    nav .nav_left {
+        gap: 3px;
     }
 
     .nav_right {
         gap: 14px;
-        margin-right: 13px;
+        margin-right: 7px;
     }
 
     .nav_right .install button {
@@ -677,72 +749,5 @@ nav .nav_left {
     .card {
         width: 80vw;
         justify-content: center;
-    }
-}
-
-/* responsiveness for readme note 14 */
-@media (max-width:393px) {
-    nav .nav_left {
-        gap: 15px;
-    }
-
-    nav {
-        padding: 0px 5px;
-    }
-
-    .home img {
-        width: 20px;
-    }
-
-    .nav_right {
-        gap: 15px;
-        margin-right: 23px;
-    }
-
-    .left {
-        width: 365px;
-    }
-
-    .hamburger {
-        width: 35px;
-        height: 34px;
-    }
-
-    .songList ul li {
-        width: 85vw;
-    }
-
-    .spotifyPlaylist .card {
-        width: 330px;
-    }
-
-    .playbox {
-        margin-left: 0px;
-        bottom: 55px;
-        height: 150px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .songbuttons {
-        gap: 15px;
-    }
-
-    .timevol {
-        gap: 60px;
-        width: 240px;
-        margin-bottom: 20px;
-    }
-
-    .seekbar {
-        width: 80%;
-        bottom: 8px;
-        height: 4px;
-        background: rgb(121, 121, 121);
-        margin: 0px;
-    }
-
-    .songinfo {
-        margin-top: 15px;
     }
 }
