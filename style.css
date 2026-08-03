@@ -262,7 +262,7 @@ nav .nav_left {
 
 
 .spotifyPlaylist {
-    width: 80vw;
+    width: 74vw;
     height: auto;
     padding: 16px;
     background-color: rgb(21, 21, 21);
@@ -299,6 +299,7 @@ nav .nav_left {
     gap: 10px;
     flex-wrap: wrap;
     max-height: 60vh;
+    width: 70vw;
     overflow: auto;
 }
 
@@ -527,9 +528,9 @@ nav .nav_left {
 
 }
 
-/* for phone */
+/* for phone infinix hot 10*/
 
-@media (max-width:360px) {
+@media (max-width:363px) {
     .spotifyPlaylist ul li {
         max-width: 60vw
     }
@@ -676,5 +677,72 @@ nav .nav_left {
     .card {
         width: 80vw;
         justify-content: center;
+    }
+}
+
+/* responsiveness for readme note 14 */
+@media (max-width:393px) {
+    nav .nav_left {
+        gap: 15px;
+    }
+
+    nav {
+        padding: 0px 5px;
+    }
+
+    .home img {
+        width: 20px;
+    }
+
+    .nav_right {
+        gap: 15px;
+        margin-right: 23px;
+    }
+
+    .left {
+        width: 365px;
+    }
+
+    .hamburger {
+        width: 35px;
+        height: 34px;
+    }
+
+    .songList ul li {
+        width: 85vw;
+    }
+
+    .spotifyPlaylist .card {
+        width: 330px;
+    }
+
+    .playbox {
+        margin-left: 0px;
+        bottom: 55px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .songbuttons {
+        gap: 15px;
+    }
+
+    .timevol {
+        gap: 60px;
+        width: 240px;
+        margin-bottom: 20px;
+    }
+
+    .seekbar {
+        width: 80%;
+        bottom: 8px;
+        height: 4px;
+        background: rgb(121, 121, 121);
+        margin: 0px;
+    }
+
+    .songinfo {
+        margin-top: 15px;
     }
 }
