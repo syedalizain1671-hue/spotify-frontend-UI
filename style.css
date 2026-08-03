@@ -571,7 +571,7 @@ nav .nav_left {
 
     .playbox {
         margin-left: 0px;
-        bottom: 40px;
+        bottom: 20px;
         height: 150px;
         display: flex;
         flex-direction: column;
@@ -608,7 +608,7 @@ nav .nav_left {
     }
 
     .songList ul li {
-        width: 88vw;
+        width: 90vw;
     }
 
     .songList ul {
@@ -700,10 +700,8 @@ nav .nav_left {
     .playbox {
         bottom: 30px;
         flex-direction: column;
-        height: 110px;
-        padding: 15px 0px;
-        width: 75vw;
-        margin-left: 21px;
+        height: 120px;
+        width: 80vw;
     }
 
     .play {
